@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nathanaellpez.myapplication.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@color/backLogin"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorwhit"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5000dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_above="@+id/loginLayout"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingreso de Usuarios"
+            android:textSize="18dp"
+            android:textColor="@color/colorwhit"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/login"
+        android:orientation="vertical"
+        android:id="@+id/loginLayout"
+        android:padding="30dp">
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Usuario"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorwhit"
+            android:textColorHint="@color/colorwhit"/>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="40dp"
+                    android:textColor="@color/colorwhit"
+                    android:hint="Contraseña"
+                    android:textColorHint="@color/colorwhit"
+                    android:inputType="textPassword"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="220dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/shadow"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Ingresar"
+            android:textColor="@color/colorwhit"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginLayout"
+        android:layout_centerHorizontal="true"
+        android:text="No tienes una cuenta?"
+        android:id="@+id/textregistrate"
+        android:textSize="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textregistrate"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:text="Registrate"
+            android:id="@+id/btnRegistrate"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
